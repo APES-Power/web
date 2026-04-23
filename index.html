@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Website</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: sans-serif;
+      color: #222;
+      background: #fff;
+    }
+
+    nav {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0.75rem 2rem;
+      border-bottom: 1px solid #e5e5e5;
+    }
+
+    nav .logo { font-weight: 600; font-size: 1rem; }
+
+    nav .links { display: flex; gap: 1.5rem; }
+    nav .links a { font-size: 0.9rem; color: #555; text-decoration: none; }
+    nav .links a:hover { color: #111; }
+
+    .hero {
+      text-align: center;
+      padding: 4rem 2rem;
+      border-bottom: 1px solid #e5e5e5;
+    }
+
+    .hero h1 { font-size: 2rem; font-weight: 600; margin-bottom: 0.5rem; }
+    .hero p { font-size: 1rem; color: #555; margin-bottom: 1.5rem; }
+
+    .btn {
+      display: inline-block;
+      padding: 0.5rem 1.25rem;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      font-size: 0.9rem;
+      color: #222;
+      text-decoration: none;
+      cursor: pointer;
+    }
+
+    .btn:hover { background: #f5f5f5; }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 1rem;
+      padding: 2rem;
+    }
+
+    .card {
+      border: 1px solid #e5e5e5;
+      border-radius: 10px;
+      padding: 1.25rem;
+    }
+
+    .card-icon { font-size: 1.25rem; margin-bottom: 0.5rem; }
+    .card h3 { font-size: 1rem; font-weight: 600; margin-bottom: 0.25rem; }
+    .card p { font-size: 0.875rem; color: #666; line-height: 1.5; }
+
+    footer {
+      text-align: center;
+      padding: 1.25rem;
+      font-size: 0.8rem;
+      color: #999;
+      border-top: 1px solid #e5e5e5;
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <span class="logo">My Website</span>
+    <div class="links">
+      <a href="#">Home</a>
+      <a href="#">About</a>
+      <a href="#">Contact</a>
+    </div>
+  </nav>
+
+  <section class="hero">
+    <h1>Welcome to my website</h1>
+    <p>This is a simple test page hosted on GitHub Pages.</p>
+    <a href="#" class="btn">Get started</a>
+  </section>
+
+  <section class="cards">
+    <div class="card">
+      <div class="card-icon">★</div>
+      <h3>Feature one</h3>
+      <p>A short description of this feature goes here.</p>
+    </div>
+    <div class="card">
+      <div class="card-icon">◆</div>
+      <h3>Feature two</h3>
+      <p>Another thing your site does or offers to visitors.</p>
+    </div>
+    <div class="card">
+      <div class="card-icon">●</div>
+      <h3>Feature three</h3>
+      <p>One more reason people should stick around.</p>
+    </div>
+  </section>
+
+  <footer>© 2026 My Website — Built with GitHub Pages</footer>
+
+</body>
+</html>
