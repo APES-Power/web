@@ -12,21 +12,35 @@
 <header class="nav">
   <div class="container">
     <h1 class="logo"><img src="images/apes-logo-horiz.svg" style="width: 100px"></h1>
-    <nav>
-      <a href="#">Home</a>
-      <a href="projects.html">Projects</a>
-      <a href="about.html">About</a>
-      <a href="contact.html">Contact</a>
-    </nav>
+    <div class="nav-right">
+      <div class="language-selector">
+        <button class="language-btn">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l.15-.15C9.66 15.66 10.32 15 11 15s1.34.66 1.85 1.85L13 17v-2h-3v2zm6-5H7v-2h9v2z"/>
+          </svg>
+          <span id="current-lang">EN</span>
+        </button>
+        <div class="dropdown-content">
+          <a href="#" data-lang="en">English</a>
+          <a href="#" data-lang="es">Español</a>
+        </div>
+      </div>
+      <nav>
+        <a href="#" data-i18n="nav.home">Home</a>
+        <a href="projects.html" data-i18n="nav.projects">Projects</a>
+        <a href="about.html" data-i18n="nav.about">About</a>
+        <a href="contact.html" data-i18n="nav.contact">Contact</a>
+      </nav>
+    </div>
   </div>
 </header>
 
 <!-- HERO -->
 <section class="hero">
   <div class="hero-content">
-    <h2>Trust the monkeys</h2>
-    <p>Intelligent solutions from the ground-up.</p>
-    <button onclick="window.location.href='projects.html'">
+    <h2 data-i18n="hero.title">Trust the monkeys</h2>
+    <p data-i18n="hero.subtitle">Intelligent solutions from the ground-up.</p>
+    <button onclick="window.location.href='projects.html'" data-i18n="hero.button">
   Explore
 </button>
   </div>
@@ -35,16 +49,28 @@
 <!-- FEATURE GRID -->
 <section class="features container">
   <div class="feature">
-    <h3>Feature One</h3>
-    <p>Describe something cool here.</p>
+    <h3 data-i18n="feature1.title">Power Electronics</h3>
+    <p data-i18n="feature1.desc">From IC power delivery to grid voltage applications</p>
   </div>
   <div class="feature">
-    <h3>Feature Two</h3>
-    <p>Another strong selling point.</p>
+    <h3 data-i18n="feature2.title">Low voltage projects</h3>
+    <p data-i18n="feature2.desc">Legalization projects for the Spanish Administration</p>
   </div>
   <div class="feature">
-    <h3>Feature Three</h3>
-    <p>Keep it minimal and clean.</p>
+    <h3 data-i18n="feature3.title">Digital electronics</h3>
+    <p data-i18n="feature3.desc">Microprocessor and FPGA hardware and firmware solutions</p>
+  </div>
+  <div class="feature">
+    <h3 data-i18n="feature4.title">Control Engineering</h3>
+    <p data-i18n="feature4.desc">From basic PID controllers to Fuzzy Logic systems</p>
+  </div>
+  <div class="feature">
+    <h3 data-i18n="feature5.title">Lighting Projects</h3>
+    <p data-i18n="feature5.desc">Low-energy lighting solutions for residential and industrial applications</p>
+  </div>
+  <div class="feature">
+    <h3 data-i18n="feature6.title">Product Development</h3>
+    <p data-i18n="feature6.desc">House designed, robust, modular and affordable electronics</p>
   </div>
 </section>
 
@@ -55,14 +81,15 @@
 
 <!-- ABOUT -->
 <section class="about container">
-  <h2>About Us</h2>
-  <p>Write about your brand, mission, or product philosophy.</p>
+  <h2 data-i18n="about.title">About APES</h2>
+  <p data-i18n="about.story">Passionate primates dedicated to innovative electrical solutions. From concept to implementation, we got you covered!</p>
 </section>
 
 <!-- FOOTER -->
 <footer>
-  <p>© 2026 Advanced Power and Electrical Solutions</p>
+  <p data-i18n="footer.copyright">© 2026 Advanced Power and Electrical Solutions</p>
 </footer>
 
+<script src="script.js"></script>
 </body>
 </html>

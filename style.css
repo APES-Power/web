@@ -21,6 +21,7 @@ body {
 .nav {
   padding: 20px 0;
   border-bottom: 1px solid #222;
+  background: #757575;
 }
 
 .nav .container {
@@ -29,14 +30,66 @@ body {
   align-items: center;
 }
 
+.nav-right {
+  display: flex;
+  align-items: center;
+}
+
 .nav a {
   margin-left: 20px;
-  color: #ccc;
+  color: #000000;
   text-decoration: none;
   transition: 0.3s;
 }
 
 .nav a:hover {
+  color: #004200;
+}
+
+.languages {
+  margin-right: 20px;
+}
+
+.language-selector {
+  position: relative;
+  margin-right: 20px;
+}
+
+.language-btn {
+  background: none;
+  border: none;
+  color: #000000;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 14px;
+}
+
+.language-btn:hover {
+  color: #004200;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  top: 100%;
+  right: 0;
+  background: #333;
+  min-width: 100px;
+  box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: #ccc;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background: #444;
   color: #fff;
 }
 

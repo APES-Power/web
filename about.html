@@ -9,37 +9,52 @@
 
 <header class="nav">
   <div class="container">
-    <h1 class="logo">YOUR LOGO</h1>
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="projects.html">Projects</a>
-      <a href="about.html">About</a>
-      <a href="contact.html">Contact</a>
-    </nav>
+    <h1 class="logo"><img src="images/apes-logo-horiz.svg" style="width: 100px"></h1>
+    <div class="nav-right">
+      <div class="language-selector">
+        <button class="language-btn">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l.15-.15C9.66 15.66 10.32 15 11 15s1.34.66 1.85 1.85L13 17v-2h-3v2zm6-5H7v-2h9v2z"/>
+          </svg>
+          <span id="current-lang">EN</span>
+        </button>
+        <div class="dropdown-content">
+          <a href="#" data-lang="en">English</a>
+          <a href="#" data-lang="es">Español</a>
+        </div>
+      </div>
+      <nav>
+        <a href="index.html" data-i18n="nav.home">Home</a>
+        <a href="projects.html" data-i18n="nav.projects">Projects</a>
+        <a href="about.html" data-i18n="nav.about">About</a>
+        <a href="contact.html" data-i18n="nav.contact">Contact</a>
+      </nav>
+    </div>
   </div>
 </header>
 
 <section class="about container">
-  <h2>About Us</h2>
-  <p>
+  <h2 data-i18n="about.title">About Us</h2>
+  <p data-i18n="about.story">
     Write your story here. Who you are, what you do, and why it matters.
     Keep it simple, clean, and focused.
   </p>
 
   <div style="margin-top:40px;">
-    <h3>Our Mission</h3>
-    <p>Describe your vision and goals.</p>
+    <h3 data-i18n="about.mission.title">Our Mission</h3>
+    <p data-i18n="about.mission.desc">Describe your vision and goals.</p>
   </div>
 
   <div style="margin-top:40px;">
-    <h3>Our Values</h3>
-    <p>Minimalism, quality, innovation — or whatever fits you.</p>
+    <h3 data-i18n="about.values.title">Our Values</h3>
+    <p data-i18n="about.values.desc">Minimalism, quality, innovation — or whatever fits you.</p>
   </div>
 </section>
 
 <footer>
-  <p>© 2026 Your Brand</p>
+  <p data-i18n="footer.copyright">© 2026 Your Brand</p>
 </footer>
 
+<script src="script.js"></script>
 </body>
 </html>
