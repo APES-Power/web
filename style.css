@@ -1,0 +1,111 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Noto Sans, sans-serif;
+}
+
+body {
+  background: #222222;
+  color: #ffffff;
+}
+
+/* CONTAINER */
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+}
+
+/* NAV */
+.nav {
+  padding: 20px 0;
+  border-bottom: 1px solid #222;
+}
+
+.nav .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav a {
+  margin-left: 20px;
+  color: #ccc;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.nav a:hover {
+  color: #fff;
+}
+
+/* HERO */
+.hero {
+  height: 20vh;
+  background: url(background.jpg) center/cover no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.hero h2 {
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
+
+.hero button {
+  margin-top: 20px;
+  padding: 12px 28px;
+  border: none;
+  background: white;
+  color: black;
+  cursor: pointer;
+  border-radius: 30px; /* 👈 this makes it rounded */
+  font-size: 1rem;
+  transition: 0.3s;
+}
+
+.hero button:hover {
+  background: #ddd;
+}
+
+/* FEATURES */
+.features {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 40px;
+  padding: 80px 0;
+}
+
+.feature {
+  background: #151515;
+  padding: 30px;
+  border-radius: 10px;
+  transition: 0.3s;
+}
+
+.feature:hover {
+  transform: translateY(-5px);
+}
+
+/* SHOWCASE */
+.showcase img {
+  width: 100%;
+  display: block;
+}
+
+/* ABOUT */
+.about {
+  padding: 80px 0;
+  text-align: center;
+}
+
+/* FOOTER */
+footer {
+  text-align: center;
+  padding: 30px;
+  border-top: 1px solid #222;
+  color: #aaa;
+}
